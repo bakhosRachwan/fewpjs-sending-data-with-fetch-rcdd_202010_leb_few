@@ -21,7 +21,7 @@ return fetch("http://localhost:3000/users", dataObject)
   .then(response => response.json)
   .then(object => {
     
-    document.body.innerHTML = element.id
+    document.body.innerHTML = object.id
     
   })
   .catch(error => {
