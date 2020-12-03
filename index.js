@@ -18,7 +18,7 @@ let dataObject = {
 };
     let message = 'Unauthorized Access'
 
-fetch("http://localhost:3000/users", dataObject)
+return fetch("http://localhost:3000/users", dataObject)
   .then(response => response.json)
   .then(object => {
     for(const element of object ){
