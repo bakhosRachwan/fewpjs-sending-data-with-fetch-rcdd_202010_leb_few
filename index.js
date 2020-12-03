@@ -24,7 +24,7 @@ fetch("http://localhost:3000/users", dataObject)
     for(const element of object ){
     document.body.innerHTML = element.id
     }
-    })
+  })
   .catch(error => {
     
     document.body.innerHTML= message
