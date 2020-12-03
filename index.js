@@ -22,12 +22,12 @@ fetch("http://localhost:3000/users", dataObject)
   .then(response => response.json)
   .then(object => {
     for(const element of object ){
-    document.querySelector('#h1').innerHTML = `<p>${element.id.rando }</p>`
+    document.body.innerHTML = element.id.rando
     }
     })
   .catch(error => {
     
-    document.body.innerHTML=`${message}`
+    document.body.innerHTML= message
     
   })
 }
