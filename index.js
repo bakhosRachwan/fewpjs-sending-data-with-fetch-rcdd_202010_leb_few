@@ -27,7 +27,7 @@ return fetch("http://localhost:3000/users", dataObject)
   })
   .catch(error => {
     
-    document.body.innerHTML= message
+    document.body.innerHTML= err.message
     
   })
 }
