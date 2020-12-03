@@ -20,9 +20,9 @@ let dataObject = {
 return fetch("http://localhost:3000/users", dataObject)
   .then(response => response.json)
   .then(object => {
-    for(const element of object ){
+    
     document.body.innerHTML = element.id
-    }
+    
   })
   .catch(error => {
     
