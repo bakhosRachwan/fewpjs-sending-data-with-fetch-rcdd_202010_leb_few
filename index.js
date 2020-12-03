@@ -16,7 +16,6 @@ let dataObject = {
   body: JSON.stringify(p)
   
 };
-    let message = 'Unauthorized Access'
 
 return fetch("http://localhost:3000/users", dataObject)
   .then(response => response.json)
