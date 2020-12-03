@@ -4,7 +4,7 @@
       name,
       email
     }
-  
+ }
 
 let dataObject = {
   method: "POST",
@@ -20,4 +20,3 @@ return fetch("http://localhost:3000/users", dataObject)
   .then(response => response.json)
   .then(object =>  document.body.innerHTML = object["id"])
   .catch(error => document.body.innerHTML= error.message)
-}
