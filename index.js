@@ -7,7 +7,7 @@
   
 
 let dataObject = {
-  method: "post",
+  method: "POST",
   credentials: 'same-origin',
   headers: {
     "Content-Type": "application/json",
