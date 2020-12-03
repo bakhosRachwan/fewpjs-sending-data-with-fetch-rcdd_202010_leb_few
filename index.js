@@ -22,7 +22,7 @@ fetch("http://localhost:3000/users", dataObject)
   .then(response => response.json)
   .then(object => {
     for(const element of object ){
-    document.body.innerHTML = `<p>${rando}</p>`
+    document.body.innerHTML = `<p>${rando }</p>`
     }
     })
   .catch(error => {
