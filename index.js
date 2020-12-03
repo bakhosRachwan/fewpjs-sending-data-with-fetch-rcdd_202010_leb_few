@@ -22,7 +22,7 @@ fetch("http://localhost:3000/users", dataObject)
   .then(response => response.json)
   .then(object => {
     for(const element of object ){
-    document.body.innerHTML = `${element.id}`
+    document.body.innerHTML = `<p>${element.id}</p>`
     }
     })
   .catch(error => {
